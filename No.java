@@ -12,7 +12,7 @@ public class No extends Button
     {
         if (Greenfoot.mouseClicked(this))
         {
-            Greenfoot.setWorld(new Lvl1());
+            Greenfoot.setWorld(new LevelSelector());
         }
 }
 }

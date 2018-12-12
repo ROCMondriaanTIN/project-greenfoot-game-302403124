@@ -35,7 +35,7 @@ public class Hero extends Mover {
     @Override
     public void act() {
         handleInput();
-        checkpoint ();      
+        
         
         velocityX *= drag;
         velocityY += acc;
@@ -86,15 +86,6 @@ public class Hero extends Mover {
             }
         }
     }
-    public void checkpoint()
-    {
-    {
-            if (isTouching(Checkpoint.class)) {
-                x=getX();
-                y=getY();
-            }
-        }
-    } 
     public boolean onGround()
     {
         Actor under = getOneObjectAtOffset(0, getHeight()/2,Tile.class);
@@ -103,7 +94,7 @@ public class Hero extends Mover {
     }
     public void handleInput() {
         {
-        if (Greenfoot.isKeyDown("up")&& velocityY == 0) {
+        if (Greenfoot.isKeyDown("up")&& velocityY == 0 || (Greenfoot.isKeyDown("w") && isTouching(Rope.class))) {
             velocityY = jumpHeight;
         }
         if (Greenfoot.isKeyDown("left")) {

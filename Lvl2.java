@@ -55,7 +55,7 @@ public class Lvl2 extends World{
 
         // Alle objecten toevoegen aan de wereld: camera, main karakter en mogelijke enemies
         addObject(camera, 0, 0);
-        addObject(hero, 235,4780);
+        addObject(hero, 1000,1100);
         //addObject(new Enemy(), 1170, 410);
         // spawnpoint (235, 4780);
         // spawnpoint 1 (3381,3803);

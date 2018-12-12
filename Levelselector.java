@@ -1,19 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/*
- * Write a description of class Levelselector here.
+/**
+ * Write a description of class LevelSelector here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
- 
-public class Levelselector extends World
+ */
+public class LevelSelector extends World
 {
 
-    public Levelselector()
+
+    public LevelSelector()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1300, 800, 1); 
-
+        super(1000, 800, 1, false); 
+        //this.setBackground("LSbackGround.png");
+        
         prepare();
     }
 
@@ -29,10 +31,9 @@ public class Levelselector extends World
     
     private void prepare()
     {
-        Lvl1 lvl1 = new Lvl1();
-        addObject(Lvl1,335,464);
-        Lvl2 lvl2 = new Lvl2();
-        addObject(Lvl2,542,464);
+        Level1 level1 = new Level1();
+        addObject(level1,335,464);
+        Level2 level2 = new Level2();
+        addObject(level2,542,464);
     }
 }
-*/
