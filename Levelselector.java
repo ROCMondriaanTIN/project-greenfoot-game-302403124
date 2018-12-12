@@ -14,7 +14,7 @@ public class LevelSelector extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 800, 1, false); 
-        //this.setBackground("LSbackGround.png");
+        this.setBackground("LSbackGround.jpg");
         
         prepare();
     }
@@ -35,5 +35,7 @@ public class LevelSelector extends World
         addObject(level1,335,464);
         Level2 level2 = new Level2();
         addObject(level2,542,464);
+        level2.setLocation(685,448);
+        level1.setLocation(318,448);
     }
 }
